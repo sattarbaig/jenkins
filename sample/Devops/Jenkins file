@@ -1,0 +1,8 @@
+node{
+#This stage take arguments
+stage('SCM Checkout ')
+git 'https://github.com/sattarbaig/jenkins'
+}
+stage('Compile-Package){
+sh 'mvn package'
+}
