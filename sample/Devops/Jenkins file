@@ -1,8 +1,0 @@
-node{
-stage('SCM Checkout ')
-git 'https://github.com/sattarbaig/jenkins/tree/master/sample/Devops'
-}
-stage('Compile-Package'){
-   def mvnhome = tool name: 'Maven', type: 'maven' 
-  sh "${mvnHome}/bin/mvn package"
-}
